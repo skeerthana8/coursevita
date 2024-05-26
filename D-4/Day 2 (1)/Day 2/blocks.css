@@ -1,0 +1,63 @@
+/* This is a partial blocks.css, you need to add more rules
+   to this file to complete the assignment.  Do not add any CSS
+   styling to the original index.htm / start.htm */
+
+   body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    height: 100vh;
+    margin: 0;
+}
+
+#one, #two, #three, #four {
+    border: 5px solid;
+    padding: 20px;
+    width: 25%;
+    text-align: center;
+}
+
+#one {
+    border-color: blue;
+    grid-row: 2;
+    grid-column: 1;
+    align-self: start;
+    justify-self: start;
+}
+
+#two {
+    border-color: green;
+    grid-row: 2;
+    grid-column: 2;
+    align-self: start;
+    justify-self: end;
+}
+
+#three {
+    border-color: orange;
+    grid-row: 3;
+    grid-column: 1;
+    align-self: end;
+    justify-self: start;
+}
+
+#four {
+    border-color: yellow;
+    grid-row: 3;
+    grid-column: 2;
+    align-self: end;
+    justify-self: end;
+}
+
+#link {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+
+#link a {
+    color: blue;
+    font-weight: bold;
+}
